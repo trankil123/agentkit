@@ -1,5 +1,13 @@
 # AgentKit Changelog
 
+## 0.10.4
+
+### Patch Changes
+
+- [#863](https://github.com/coinbase/agentkit/pull/863) [`2471251`](https://github.com/coinbase/agentkit/commit/24712518430c787f5c543781b39116708a2d759a) Thanks [@phdargen](https://github.com/phdargen)! - Converted all dynamic to static imports
+
+- [#864](https://github.com/coinbase/agentkit/pull/864) [`8515a32`](https://github.com/coinbase/agentkit/commit/8515a3271dd65a61ee9244e4cd162609811e2583) Thanks [@phdargen](https://github.com/phdargen)! - Updated xmtp chatbot to use CDP v2 wallets and new xmtp/agent-sdk
+
 ## 0.10.3
 
 ### Patch Changes
