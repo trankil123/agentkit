@@ -1,0 +1,18 @@
+uint256 public yesCount;
+uint256 public noCount;
+
+// Nouvelle fonction pour voter
+function vote(bool _yes) external payable {
+    require(msg.value > 0, "Send some ETH"); // optionnel : le paiement valide le vote
+    if (_yes) {
+        yesCount++;
+    } else {
+        noCount++;
+    }
+    emit Received(msg.sender, msg.value, _yes ? "Yes" : "No");
+}
+
+// Fonction pour récupérer les résultats
+function getResults() external view returns (uint256 yes, uint256 no) {
+    return (yesCount, noCount);
+}
